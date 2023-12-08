@@ -6,5 +6,6 @@ public class Sword extends Melee{
         this.baseDef = 2;
         this.baseDex = 1;
         this.type = "Sword";
+        updateStats();
     }
 }

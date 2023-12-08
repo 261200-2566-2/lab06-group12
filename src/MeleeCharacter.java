@@ -1,11 +1,14 @@
-public abstract class MeleeCharacter extends Character{
+public class MeleeCharacter extends Character{
     protected Melee mainHand;
-    public MeleeCharacter(String name,int level,Sword mainHand){
-        super(name,level);
-        this.mainHand = new Sword(mainHand.name, mainHand.level);    //to be fixed
+    protected int calculateDmg() {
+        return calculateDmg(mainHand.getStr(), mainHand.getDex());
     }
-    public MeleeCharacter(String name,int level){
-        super(name,level);
-        this.mainHand = new Melee();    //to be fixed
+    protected int calculateDef() {
+        return calculateDef(mainHand.getDef(), mainHand.getStr());
+    }
+    public void attack(Character target){
+        System.out.println(name + " Attack "+target.getName()+" with his/her "+mainHand.getName());
+        System.out.println("Damage "+calculateDmg());
+        target.beingAttack(calculateDmg());
     }
 }

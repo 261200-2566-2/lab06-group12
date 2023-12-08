@@ -4,14 +4,11 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Sword b1 = new Sword("Triple A",1);
+//        b1.statsDisplay();
+        Knight a1 = new Knight("MIM",4,b1);
+        Knight a2 = new Knight("WIM",1,b1);
+        a1.statsDisplay();
+        a1.attack(a2);
     }
 }

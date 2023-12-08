@@ -9,5 +9,5 @@ public abstract class Equipment {
     public int getStr(){return str;}
     public int getDex(){return dex;}
     public int getDef() {return def;}
-    public abstract void statsDisplay(String type);
+    public abstract void statsDisplay();
 }

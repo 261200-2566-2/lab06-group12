@@ -1,6 +1,13 @@
 public abstract class BaseStats{
     protected int hp,maxHp,mp,maxMp,sp,maxSp,str,dex,def,level,baseStr,baseDef,baseDex;
-    protected abstract void updateStats();
+    protected void updateStats(){
+        maxHp = 100+(level*10);
+        maxMp = 50+(level*5);
+        maxSp = 10+level*5;
+        str = baseStr*level+5;
+        def = baseDef*level+5;
+        dex = baseDex*level+5;
+    }
     public void upLevel(){
         upLevel(1);
     }

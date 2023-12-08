@@ -23,7 +23,8 @@ public class Weapon extends Equipment{
         def = (int)(baseDef*level*0.5)+5;
         dex = (int)(baseDex*level*0.7)+5;
     }
-    public void statsDisplay(String type) {
+    public void statsDisplay() {
+        System.out.println("\n"+type);
         System.out.println("Name\t: "+name+" level."+level);
         System.out.println("Strength\t: "+str);
         System.out.println("Defense \t: "+def);
