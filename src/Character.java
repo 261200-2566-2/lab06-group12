@@ -41,9 +41,9 @@ public abstract class Character extends BaseStats{
         System.out.println("Speed\t: "+sp+"/"+maxSp);
         System.out.println("Weapon\t: "+mainHandName+" "+mainHandClass+" level."+mHlvl);
         System.out.println("STATS\t\tBASE\tWEAPON\tSUM");
-        System.out.println("Strength\t: "+str+"\t\t+"+mHstr+"\t\t:"+(str+mHstr));
-        System.out.println("Defense \t: "+def+"\t\t+"+mHdef+"\t\t:"+(def+mHdef));
-        System.out.println("Dexterity\t: "+dex+"\t\t+"+mHdex+"\t\t:"+(dex+mHdex));
+        System.out.println("Strength\t: "+str+" \t+"+mHstr+"\t\t:"+(str+mHstr));
+        System.out.println("Defense \t: "+def+" \t+"+mHdef+"\t\t:"+(def+mHdef));
+        System.out.println("Dexterity\t: "+dex+" \t+"+mHdex+"\t\t:"+(dex+mHdex));
     }
     protected void born(){
         hp=maxHp;

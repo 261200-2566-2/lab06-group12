@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        Sword b1 = new Sword("Triple A",1);
+        Sword b1 = new Sword("Triple A",10);
 //        b1.statsDisplay();
         Knight a1 = new Knight("MIM",4,b1);
         Knight a2 = new Knight("WIM",1,b1);

@@ -7,7 +7,7 @@ public class MeleeCharacter extends Character{
         return calculateDef(mainHand.getDef(), mainHand.getStr());
     }
     public void attack(Character target){
-        System.out.println(name + " Attack "+target.getName()+" with his/her "+mainHand.getName());
+        System.out.println(name + " Attack "+target.getName()+" with his/her "+mainHand.getName()+" "+mainHand.type);
         System.out.println("Damage "+calculateDmg());
         target.beingAttack(calculateDmg());
     }
