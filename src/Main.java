@@ -10,5 +10,9 @@ public class Main {
         Knight a2 = new Knight("WIM",1,b1);
         a1.statsDisplay();
         a1.attack(a2);
+        Bow c3 = new Bow("Grunge",1,3);
+        Archer a3 = new Archer("Kijm",2,c3);
+        a3.statsDisplay();
+        a3.attack(a2);
     }
 }

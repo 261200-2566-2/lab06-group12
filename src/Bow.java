@@ -1,11 +1,18 @@
 public class Bow extends Range{
-    public Bow(String name,int level){
+    protected int ammo,maxAmmo;
+    public Bow(String name,int level,int ammocapa){
         this.name = name;
         this.level = level;
-        this.baseStr = 3;
-        this.baseDef = 2;
-        this.baseDex = 1;
+        this.baseStr = 1;
+        this.baseDef = 1;
+        this.baseDex = 4;
         this.type = "Bow";
+        this.maxAmmo= ammocapa;
+        this.ammo = maxAmmo;
         updateStats();
     }
+    public int getAmmo() {
+        return ammo;
+    }
+    public int getMaxAmmo(){return maxAmmo;}
 }
