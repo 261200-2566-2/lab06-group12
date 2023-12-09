@@ -51,4 +51,13 @@ public abstract class Character extends BaseStats{
         sp=maxSp;
         alive = true;
     }
+    public void setRingSlot1(Ring ringSlot1) {
+        this.ringSlot1 = ringSlot1;
+    }
+    public void setRingSlot2(Ring ringSlot2) {
+        this.ringSlot2 = ringSlot2;
+    }
+    public void setGlove(Glove glove) {
+        this.glove = glove;
+    }
 }
