@@ -10,17 +10,26 @@ public class Main {
         Knight a2 = new Knight("WIM",1,b1);
         a1.statsDisplay();
         a1.attack(a2);
-        Bow c3 = new Bow("Grunge",1,3);
+        Bow c3 = new Bow("Grunge",10,3);
         Archer a3 = new Archer("Kijm",2,c3);
         a3.statsDisplay();
         a3.attack(a2);
         System.out.println("\nAccessory test");
         Ring ring1 = new Ring("Fire Ring",1,1,1);
+        Glove glove = new Glove("Gauntlet", 3,3,3);
         a2.statsDisplay();
         a2.setRingSlot1(ring1);
         a2.setRingSlot2(ring1);
+        a2.setGlove(glove);
         ring1.statsDisplay();
         a2.heal();
         a2.statsDisplay();
+        System.out.println("Bow with ammo test");
+        a3.statsDisplay();
+        a3.attack(a2);
+        a3.attack(a2);
+        a3.attack(a2);
+        a3.reload();
+        a3.attack(a2);
     }
 }
