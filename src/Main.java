@@ -4,14 +4,35 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
+        Sword b1 = new Sword("Triple A",10);
+//        b1.statsDisplay();
+        Knight a1 = new Knight("MIM",4,b1);
+        Knight a2 = new Knight("WIM",1,b1);
+        a1.statsDisplay();
+        a1.attack(a2);
+        Bow c3 = new Bow("Grunge",10,3);
+        c3.upLevel();
+        c3.upLevel(2);
+        Archer a3 = new Archer("Kijm",2,c3);
+        a3.statsDisplay();
+        a3.attack(a2);
+        System.out.println("\nAccessory test");
+        Ring ring1 = new Ring("Fire Ring",1,1,1);
+        Glove glove = new Glove("Gauntlet", 3,3,3);
+        a2.statsDisplay();
+        a2.setRingSlot1(ring1);
+        a2.setRingSlot2(ring1);
+        a2.setGlove(glove);
+        ring1.statsDisplay();
+        a2.heal();
+        a2.statsDisplay();
+        System.out.println("Bow with ammo test");
+        a3.statsDisplay();
+        a3.attack(a2);
+        a3.attack(a2);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        a3.attack(a2);
+        a3.reload();
+        a3.attack(a2);
     }
 }
