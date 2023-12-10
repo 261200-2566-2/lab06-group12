@@ -14,5 +14,13 @@ public class Main {
         Archer a3 = new Archer("Kijm",2,c3);
         a3.statsDisplay();
         a3.attack(a2);
+        System.out.println("\nAccessory test");
+        Ring ring1 = new Ring("Fire Ring",1,1,1);
+        a2.statsDisplay();
+        a2.setRingSlot1(ring1);
+        a2.setRingSlot2(ring1);
+        ring1.statsDisplay();
+        a2.heal();
+        a2.statsDisplay();
     }
 }
