@@ -11,6 +11,8 @@ public class Main {
         a1.statsDisplay();
         a1.attack(a2);
         Bow c3 = new Bow("Grunge",10,3);
+        c3.upLevel();
+        c3.upLevel(2);
         Archer a3 = new Archer("Kijm",2,c3);
         a3.statsDisplay();
         a3.attack(a2);
@@ -28,6 +30,7 @@ public class Main {
         a3.statsDisplay();
         a3.attack(a2);
         a3.attack(a2);
+
         a3.attack(a2);
         a3.reload();
         a3.attack(a2);
